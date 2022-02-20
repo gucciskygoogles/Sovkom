@@ -14,10 +14,6 @@ class DataFromTable:
 
 class File:
 
-    def __init__(self):
-        if os.path.exists("src/credit.txt"):
-            os.remove("src/credit.txt")
-
     @staticmethod
     def write_in_file(summ, pay):
         with open('src/credit.txt', 'a') as f:
